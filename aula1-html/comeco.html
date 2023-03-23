@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section div{
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        section div:hover{
+            transition: .3s;
+            background-color: orange;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="espaco-blocos">
+        </section>
+    </main>
+
+    <script>
+        const espacoBlocos = document.querySelector('.espaco-blocos');
+        const blocos = document.querySelectorAll('section div');
+        
+        for(let i = 0; i < 50; i++){
+            const div = document.createElement('div');
+            espacoBlocos.appendChild(div)
+        }
+    </script>
+</body>
+</html>
