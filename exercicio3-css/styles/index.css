@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    height: 50px;
+    background-color: lightslategray;
+}
+
+#espaco-cadastro{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#espaco-cadastro a{
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#espaco-cadastro a:hover{
+    background-color: purple;
+    transition: .5s;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+}
+
+.cartaz-filme img{
+    height: 240px;
+}
+
+.cartaz-filme{
+    display: inline-block;
+    background-color: gray;
+    height: fit-content;
+    width: min-content;
+    text-align: center;
+    margin-inline: 3px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.div-ref-filme{
+
+}
+
+.div-ref-filme a{
+    color: white;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+

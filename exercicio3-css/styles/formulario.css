@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: solid 1px black;
+}
+
+.header label{
+    margin-inline: 3px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main form{
+    margin: 5px;
+    width: 25em;
+}
+
+.campo-informacoes{
+    background-color: lightyellow;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.campo-informacoes input[type=range]{
+    width: 100%;
+    list-style: none;
+}
+
+#preferencia-filme li{
+    font-size: 1.2em;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#preferencia-filme li label{
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+#div-btn-enviar{
+    margin: 5px;
+}
+
+#div-btn-enviar button{
+    padding: 4px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+footer{
+    height: max-content;
+    height: 7vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+}
+
+footer a{
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 5px;
+}

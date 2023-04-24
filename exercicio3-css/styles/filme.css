@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightcyan;
+    height: 100vh;
+}
+
+body main{
+    height: inherit;
+}
+#titulo-filme{
+    background-color: lightslategray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-filme h1{
+    color: white;
+}
+
+.section-filme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.parte-apresentacao figure figcaption{
+    background-color: white;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+    border: solid 1px black;
+}
+
+.trailer{
+    height: fit-content;
+}
+
+.parte-apresentacao{
+    display: flex;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.parte-apresentacao figure{
+    margin-inline-end: 5px;
+}
+
+.informacoes-filme{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    color: white;
+    height: fit-content;
+}
+
+.trailer{
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    height: inherit;
+}
+
+.trailer audio{
+    background-color: orangered;
+    padding: 10px;
+    align-self: center;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: solid 1px black;
+}
+.sessoes{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sessoes div{
+    background-color: orangered;
+    border: solid 1px black;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.section-dialog dialog{
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    bottom: 0;
+}
