@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 320px){
+    div{
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 480px){
+    div{
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width: 600px){
+    div{
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 768px){
+    div{
+        background-color: lightyellow;
+    }
+}
+
+@media screen and (min-width: 800px){
+    div{
+        background-color: brown;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    div{
+        background-color: darkblue;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    div{
+        background-color: darkgreen;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    div{
+        background-color: darkred;
+    }
+}
+
+.div{
+    height: 100vh;
+}

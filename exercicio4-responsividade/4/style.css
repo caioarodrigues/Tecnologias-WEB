@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1330px) and (max-width: 1500px){
+    main{
+        display: flex;
+    }
+
+    .lista-paises li{
+        list-style: none;
+    }
+
+    .lista-paises li button{
+        width: 200px;
+        padding: 5px;
+        margin-block: 3px;
+    }
+
+    #titulo{
+        text-align: center;
+    }
+
+    #texto{
+        margin: 5px;
+    }
+
+    .bandeira{
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1330px){
+    .bandeira{
+        display: none;
+    }
+
+    main{
+        display: flex;
+    }
+    
+    .lista-paises li{
+        margin-inline: 15px;
+        list-style: none;
+    }
+
+    .lista-paises li button{
+        width: 200px;
+        padding: 5px;
+        margin-block: 3px;
+    }
+
+    #titulo{
+        text-align: center;
+    }
+
+    #texto{
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 500px){
+    .bandeira{
+        display: none;
+    }
+
+    .lista-paises li button{
+        width: 100%;
+        padding: 5px;
+        margin-block: 3px;
+    }
+
+    #titulo{
+        text-align: center;
+    }
+
+    #texto{
+        margin: 5px;
+        align-content:space-around;
+    }
+}
