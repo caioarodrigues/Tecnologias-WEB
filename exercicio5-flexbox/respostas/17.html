@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            border: solid 1px black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+        .container div {
+            margin: 3px;   
+            width: 20vh;
+            height: 14vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(74, 74, 255);
+        }
+        .container div:nth-child(2){
+            background-color: red;
+            height: 100%;
+        }
+    </style>
+    <div class="container">
+        <div>1</div>
+        <div id="d2">2</div>
+        <div>3</div>
+        <div>4</div>    
+    </div>
+</body>
+</html>
