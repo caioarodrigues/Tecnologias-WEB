@@ -11,9 +11,10 @@
         .container{
             border: solid 1px black;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-content:baseline;
+            align-items: center;
+            justify-content: center;
             height: 90vh;
         }
         .container div {
@@ -27,15 +28,8 @@
         }
         .container div:nth-child(2){
             background-color: red;
-            position: absolute;
-            left: 165px;
-            top: 75vh;
+            align-self: flex-end;
         }
-        .container div:nth-child(3),
-        .container div:nth-child(4){
-            position: relative;
-            left: 155px;
-        } 
     </style>
     <div class="container">
         <div>1</div>

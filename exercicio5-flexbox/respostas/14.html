@@ -14,7 +14,6 @@
             flex-direction: row;
             align-content:baseline;
             height: 90vh;
-            overflow:hidden;
         }
         .container div {
             margin: 3px;   
@@ -26,12 +25,10 @@
             background-color: rgb(74, 74, 255);
         }
         .container div:nth-child(2){
-            position: absolute;
             background-color: red;
         }
-        .container div:not(#d2){
-            position: relative;
-            left: 155px;
+        .container div:nth-child(3){
+            order: -1;
         }
     </style>
     <div class="container">
