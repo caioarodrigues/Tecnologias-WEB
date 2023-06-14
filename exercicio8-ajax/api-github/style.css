@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.table-resposta{
+    background-color: yellow;
+}
+
+.table-resposta tr td {
+    padding: 0.4rem;
+    border: solid 1px black;
+}
+
+.table-resposta tr td:nth-child(odd){
+    text-align: center;
+}
+.table-resposta tr:nth-child(even){
+    background-color: #ccc;
+}
+.adicionais tr td > a {
+    padding: 0.2rem;
+    border-radius: .2rem;
+    background-color: #06b6d4;
+}

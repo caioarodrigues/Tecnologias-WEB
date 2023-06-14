@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GitHub</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="flex flex-col place-items-center">
+        <section class="login mt-2">
+            <div class="inputs flex flex-col place-items-center 
+                bg-[#ccc] content-center w-fit rounded p-2.5 
+                border-blue-300 border-4 w-1/2">
+                <h4>Nome do usuário: </h4>
+                <input type="text" id="nome-usuario" 
+                value="caioarodrigues" autofocus 
+                onfocus="this.setSelectionRange(this.value.length,
+                this.value.length);" class="rounded p-0.5 
+                outline-none"/>
+                <div class="mt-2">
+                    <button id="btn-consulta" class="w-fit 
+                    rounded p-0.5 bg-blue-300">
+                    consultar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="resultado flex flex-col items-center mt-2">
+            <div class="foto"></div>
+            <table class="table-resposta w-8/12 rounded border-blue-300
+                border-4 mt-2"></table>
+            <ul class="adicionais flex flex-wrap w-8/12 mt-2 
+                place-content-evenly bg-[#ccc] rounded
+                space-y-px"></ul>
+        </section>
+        
+        <section class="log-erros text-center"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
