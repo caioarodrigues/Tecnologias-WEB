@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="section-get">
+            <ul class="lista-usuarios"></ul>
+
+            <button type="submit" onclick="listaUsuarios()">carregar</button>
+        </section>
+
+        <section class="section-post">
+            <form class="form-post-usuario">
+                <input type="email" id="email"
+                        name="email" placeholder="email">
+                <input type="text" name="first_name" id="nome"
+                        placeholder="nome">
+                <input type="text" name="last_name"
+                        id="sobrenome" placeholder="sobrenome">
+                <input type="text" 
+                        name="avatar" id="avatar" placeholder="avatar">
+            
+                <button class="post-submitter"
+                        onclick="criaUsuario(event)">enviar</button>
+            </form>
+
+            <div class="div-resposta-post">
+                <span class="span-resposta-post"></span>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section class="section-put">
+            <form class="form-put-usuario">
+                <input type="email" id="email"
+                        name="email" placeholder="email">
+                <input type="text" name="nome" id="nome"
+                        placeholder="nome">
+                <input type="text" name="sobrenome"
+                        id="sobrenome" placeholder="sobrenome">
+                <input type="text" 
+                        name="avatar" id="avatar" placeholder="avatar">
+            
+                <button class="put-submitter"
+                        onclick="editaUsuario(event)">enviar</button>
+            </form>
+
+            <div class="div-resposta-put">
+                <span class="span-resposta-put"></span>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="delete">
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
