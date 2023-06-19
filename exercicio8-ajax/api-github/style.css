@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+main{
+    background-color: #5f5f5f;
+}
+
 .table-resposta{
     background-color: yellow;
 }
@@ -18,8 +22,18 @@
 .table-resposta tr:nth-child(even){
     background-color: #ccc;
 }
+
+.adicionais tr td {
+    padding: 0.2rem;
+}
+
 .adicionais tr td > a {
     padding: 0.2rem;
     border-radius: .2rem;
     background-color: #06b6d4;
+}
+
+.adicionais tr td > a:hover{
+    color: white;
+    background-color: #08768a;
 }

@@ -1,7 +1,7 @@
 const url = "https://api.github.com/users";
 const btnConsulta = document.querySelector("#btn-consulta");
 const tabela = document.querySelector(".table-resposta");
-const [btnState, setState] = [{ toggle: false }, () => {
+const [btnState, toggleState] = [{ toggle: false }, () => {
     const { toggle } = btnState;
 
     btnState.toggle = !toggle;
@@ -63,7 +63,6 @@ function atualizaTabela(infos){
         if(chave.includes('_')){
             chave = chave.split('_').join(' ');
         }
-        console.log(chave, valor);
 
         if(typeof valor === "string"){
             const isLink = valor.includes('https');
@@ -115,7 +114,7 @@ function ajax(){
 function carregaDados(){
     if(!btnState.toggle){
         ajax();
-        setState();
+        toggleState();
     
         return;
     }
@@ -129,10 +128,19 @@ function carregaDados(){
     [...logErros.children].forEach(item => item.remove());
     [...tableResposta.children].forEach(item => item.remove());
     [...adicionais.children].forEach(item => item.remove());
-    setState();
+    toggleState();
     foto && foto.remove();
 
     return carregaDados();
 }
 
-btnConsulta.onclick = carregaDados;
+function liberaAlturaMain(){
+    const main = document.querySelector('.main');
+    
+    main.classList.remove("h-screen");
+}
+
+btnConsulta.onclick = () => {
+    carregaDados();
+    liberaAlturaMain();
+};
